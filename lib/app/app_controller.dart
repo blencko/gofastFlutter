@@ -30,7 +30,7 @@ abstract class _AppControllerBase with Store {
 
 
   @action
-  setThemeData(ThemeMode themeMode, {bool saveShared = true}){
+  setThemeData(ThemeMode themeMode, {bool saveShared = true}) async{
     switch (themeMode) {
       case ThemeMode.dark:
           themeApp= AppThemeDark();
